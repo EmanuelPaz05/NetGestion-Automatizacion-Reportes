@@ -1,0 +1,21 @@
+name: Pruebas de automatización de reportes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Ejecutar pruebas
+        run: npm test
+      - name: Generar reporte de demostración
+        run: npm start -- --date=2026-11-11
