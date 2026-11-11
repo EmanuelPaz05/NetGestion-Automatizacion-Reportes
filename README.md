@@ -80,4 +80,4 @@ No uses direcciones de terceros, certificados de ARCA, claves reales de clientes
 
 En [Net-Gestión](https://netgestion.ar/) también se desarrollaron integraciones con ARCA, Tiendanube y reportes por Gmail/Resend. Este repositorio **sólo** demuestra de forma independiente la automatización de generación de reportes y un transporte opcional de Resend. No afirma que su arquitectura, proveedor, programación o código sean iguales a los del producto comercial.
 
-**Proyecto principal:** [Net-Gestión Demo](https://github.com/EmanuelPaz05/Sistema-de-Gestion-de-Stock-para-Negocios) · **Autor:** Emanuel Paz · [Portfolio](https://emanuel-paz-portfolio.vercel.app/) · [Guía del coloquio](https://github.com/EmanuelPaz05/EmanuelPaz05/blob/main/COLOQUIO.md)
+**Proyecto principal:** [Net-Gestión Demo](https://github.com/EmanuelPaz05/NetGestion-Presentacion) · **Autor:** Emanuel Paz · [Portfolio](https://emanuel-paz-portfolio.vercel.app/) · [Guía del coloquio](https://github.com/EmanuelPaz05/EmanuelPaz05/blob/main/COLOQUIO.md)
