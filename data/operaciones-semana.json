@@ -1,0 +1,95 @@
+[
+  {
+    "id": "V-101",
+    "fecha": "2026-11-09",
+    "unidades": 3,
+    "total": 18500,
+    "cobros": [
+      {
+        "medio": "efectivo",
+        "importe": 6500
+      },
+      {
+        "medio": "transferencia",
+        "importe": 12000,
+        "referencia": "DEMO-TR-001"
+      }
+    ],
+    "factura": "emitidas"
+  },
+  {
+    "id": "V-102",
+    "fecha": "2026-11-10",
+    "unidades": 2,
+    "total": 32000,
+    "cobros": [
+      {
+        "medio": "debito",
+        "importe": 32000
+      }
+    ],
+    "factura": "pendientes"
+  },
+  {
+    "id": "V-103",
+    "fecha": "2026-11-11",
+    "unidades": 1,
+    "total": 13500,
+    "cobros": [
+      {
+        "medio": "transferencia",
+        "importe": 13500,
+        "referencia": "DEMO-TR-002"
+      }
+    ],
+    "factura": "emitidas"
+  },
+  {
+    "id": "V-104",
+    "fecha": "2026-11-12",
+    "unidades": 4,
+    "total": 26000,
+    "cobros": [
+      {
+        "medio": "credito",
+        "importe": 18000
+      },
+      {
+        "medio": "efectivo",
+        "importe": 8000
+      }
+    ],
+    "factura": "sin_factura"
+  },
+  {
+    "id": "V-105",
+    "fecha": "2026-11-13",
+    "unidades": 2,
+    "total": 19000,
+    "cobros": [
+      {
+        "medio": "cuenta_corriente",
+        "importe": 19000
+      }
+    ],
+    "factura": "pendientes"
+  },
+  {
+    "id": "V-106",
+    "fecha": "2026-11-15",
+    "unidades": 5,
+    "total": 45000,
+    "cobros": [
+      {
+        "medio": "transferencia",
+        "importe": 25000,
+        "referencia": "DEMO-TR-003"
+      },
+      {
+        "medio": "efectivo",
+        "importe": 20000
+      }
+    ],
+    "factura": "emitidas"
+  }
+]
