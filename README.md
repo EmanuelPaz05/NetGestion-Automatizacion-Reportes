@@ -1,8 +1,51 @@
-# Automatización de reportes comerciales — Net-Gestión (demo)
+# Automatización comercial en Net-Gestión · Reportes y movimientos
 
 **Proyecto de automatización para coloquio | Emanuel Paz | Node.js 18+**
 
 > Reimplementación educativa, autónoma y con datos ficticios de un tipo de proceso que Emanuel desarrolló para Net-Gestión: la generación y el envío automatizado de reportes comerciales por correo. **No contiene código de producción** y no se conecta a Gmail, clientes ni bases reales. Ofrece una **integración opcional de prueba con Resend** usando credenciales propias, desactivada por defecto.
+
+## Lo que automatiza el producto comercial
+
+En Net-Gestión (más de 30 clientes) trabajé en procesos que se ejecutan sobre operaciones reales del comercio: **resúmenes semanales**, información de **facturación electrónica ARCA**, **cobros mediante transferencias** y comunicaciones con **Gmail y Resend**. La integración con **Tiendanube** conecta catálogo, stock y pedidos según la configuración de cada negocio.
+
+Un resumen semanal puede servir para revisar importes del período, ventas y medios de pago. Registrar pagos por transferencia permite distinguirlos de efectivo, débito y crédito; un comprobante fiscal, cuando corresponde, se gestiona mediante ARCA. En el caso real, los disparadores, controles y reglas dependen de la implementación privada.
+
+**Este repositorio es una demostración educativa independiente**, no una exportación del código real. Contiene dos circuitos ejecutables:
+
+| Demo | Qué demuestra | Alcance |
+| --- | --- | --- |
+| **Reporte diario** | Lectura de ventas ficticias, cálculo, JSON y HTML, envío opcional por Resend | No conecta con Gmail ni con la base comercial |
+| **Resumen semanal** | Ventas de una semana, desglose de cobros (incluidas transferencias) y estados ficticios de comprobantes | No consulta ARCA, ni concilia transferencias con bancos |
+
+### Captura del sistema comercial que inspiró el caso
+
+![Net-Gestión: interfaz real del punto de venta, con datos de prueba](https://emanuel-paz-portfolio.vercel.app/assets/img/netgestion-pos.webp)
+
+Imagen de la interfaz de Net-Gestión publicada en el portfolio. **No corresponde a la interfaz de esta demo por línea de comandos.**
+
+## Demostración semanal — ejecutable
+
+Con Node.js 18+:
+
+```bash
+npm run weekly
+```
+
+Crea `output/resumen-semanal.json` y `output/resumen-semanal.html`. Abrí el HTML para mostrar el reporte con ventas y cobros simulados entre el **9 y el 15 de noviembre de 2026**.
+
+También acepta un intervalo:
+
+```bash
+npm run weekly -- --from=2026-11-09 --to=2026-11-15
+```
+
+El archivo `data/operaciones-semana.json` contiene operaciones ficticias con efectivo, transferencia, tarjeta y cuenta corriente, además de estados de comprobante de ejemplo. **No valida pagos bancarios ni genera facturas ARCA.** El envío externo sigue desactivado por defecto: sólo ocurre al utilizar `--send` con credenciales propias de Resend.
+
+Para comprobar la lógica:
+
+```bash
+npm test
+```
 
 ## Problema que resuelve
 
